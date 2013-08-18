@@ -1,4 +1,4 @@
-body{font-family:'微软雅黑';}
+body{font-family:'微软雅黑';margin:0;padding:0;}
 a{color:#000;text-decoration:none;}
 a:hover{color:#f00;}
 /*
@@ -9,3 +9,16 @@ login
 .logo_box{float:left;width:220px;margin-top:110px;}
 .form_box{float:right;margin-top:100px;margin-right:100px;}
 .form_box input{line-height:23px;}
+/**
+	index/index.html
+*/
+.header{height:77px;width:100%;background:#ccc;margin-bottom:10px;}
+.header .logo_top{float:left;}
+.header .top_info{float:right;width:1155px;padding-top:16px;}
+.main{width:960px;margin:auto;}
+.main table{margin:0 130px;}
+#add_form{display:none;position:absolute;top:77px;left:560px;background:#eee;border:3px solid #39b5f3;padding:15px;}
+/**
+	index/fill_in.html
+*/
+.as_word{width:820px;background:#fff;height:700px;margin:15px auto;}

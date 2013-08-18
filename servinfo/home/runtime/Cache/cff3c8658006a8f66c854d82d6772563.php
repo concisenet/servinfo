@@ -1,0 +1,31 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>管理员登录——服务器巡检信息录入系统|德州之窗网</title>
+<link href="__PUBLIC__/css/default.css" type="text/css" rel="stylesheet"/>
+<script src="__PUBLIC__/js/jquery.js" type="text/javascript"></script>
+<script>
+	$(function(){
+		$('#verify_image').click(function(){
+			var time = new Date().getTime();
+			$(this).attr('src','__URL__/verify/'+time);
+		});
+	})
+</script>
+</head>
+<body id="login_bg">
+<div class="login_box">
+<div class="logo_box"><img src="__PUBLIC__/images/logo.jpg" /></div>
+<div class="form_box">
+	<form name="login" id="login" action="__ACTION__" method="post">
+		用户名：<input type="text" name="uname" /><br/>
+		密&emsp;码：<input type="password" name="upwd" /><br/>
+		验证码：<input type="text" name="verify_code" size="5"/>
+		<img src="__URL__/verify/" id="verify_image" /><br/>
+		<input type="submit" name="submit" value="登录" />
+	</form>
+</div>
+</div>
+</body>
+</html>
